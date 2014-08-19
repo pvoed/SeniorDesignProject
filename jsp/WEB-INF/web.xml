@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+				http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+         
+<!-- Servlets -->
+
+<servlet>
+	<servlet-name>LoginServlet</servlet-name>
+	<servlet-class>ycp.edu.seniordesign.webapp.LoginServlet</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>CreateAccountServlet</servlet-name>
+	<servlet-class>ycp.edu.seniordesign.webapp.CreateAccountServlet</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>HomePageServlet</servlet-name>
+	<servlet-class>ycp.edu.seniordesign.webapp.HomePageServlet</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>AdminLoginServlet</servlet-name>
+	<servlet-class>ycp.edu.seniordesign.webapp.admin2.AdminLoginServlet</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>AdminHomeServlet</servlet-name>
+	<servlet-class>ycp.edu.seniordesign.webapp.admin2.AdminHomeServlet</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>AdminApproveCourseServlet</servlet-name>
+	<servlet-class>ycp.edu.seniordesign.webapp.admin2.AdminApproveCourseServlet</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>StudentGradebookServlet</servlet-name>
+	<servlet-class>ycp.edu.seniordesign.webapp.StudentGradebookServlet</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>ProfessorGradebookServlet</servlet-name>
+	<servlet-class>ycp.edu.seniordesign.webapp.ProfessorGradebookServlet</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>EditProfileServlet</servlet-name>
+	<servlet-class>ycp.edu.seniordesign.webapp.EditProfileServlet</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>ChangePasswordServlet</servlet-name>
+	<servlet-class>ycp.edu.seniordesign.webapp.ChangePasswordServlet</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>RecoverPassServlet</servlet-name>
+	<servlet-class>ycp.edu.seniordesign.webapp.RecoverPassServlet</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>CampusMapServlet</servlet-name>
+	<servlet-class>ycp.edu.seniordesign.webapp.CampusMapServlet</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>AdminChangeUserTypeServlet</servlet-name>
+	<servlet-class>ycp.edu.seniordesign.webapp.admin2.AdminChangeUserTypeServlet</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>AddCourseServlet</servlet-name>
+	<servlet-class>ycp.edu.seniordesign.webapp.AddCourseServlet</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>ChangeUserTypeServlet</servlet-name>
+	<servlet-class>ycp.edu.seniordesign.webapp.ChangeUserTypeServlet</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>AddAssignmentServlet</servlet-name>
+	<servlet-class>ycp.edu.seniordesign.webapp.AddAssignmentServlet</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>CampusShuttleMapServlet</servlet-name>
+	<servlet-class>ycp.edu.seniordesign.webapp.CampusShuttleMapServlet</servlet-class>
+</servlet>
+<!-- Servlet Mappings -->
+
+<servlet-mapping>
+	<servlet-name>LoginServlet</servlet-name>
+	<url-pattern>login</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>CreateAccountServlet</servlet-name>
+	<url-pattern>createAccount</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>HomePageServlet</servlet-name>
+	<url-pattern>home</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>AdminLoginServlet</servlet-name>
+	<url-pattern>admin/login</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>AdminHomeServlet</servlet-name>
+	<url-pattern>admin/home</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>AdminApproveCourseServlet</servlet-name>
+	<url-pattern>admin/approveCourse</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>StudentGradebookServlet</servlet-name>
+	<url-pattern>scourse</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>ProfessorGradebookServlet</servlet-name>
+	<url-pattern>pcourse</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>EditProfileServlet</servlet-name>
+	<url-pattern>editProfile</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>ChangePasswordServlet</servlet-name>
+	<url-pattern>changePassword</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>RecoverPassServlet</servlet-name>
+	<url-pattern>recoverPass</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>CampusMapServlet</servlet-name>
+	<url-pattern>campusMap</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>AdminChangeUserTypeServlet</servlet-name>
+	<url-pattern>admin/changeUserType</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>AddCourseServlet</servlet-name>
+	<url-pattern>addCourse</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>ChangeUserTypeServlet</servlet-name>
+	<url-pattern>changeUserType</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>AddAssignmentServlet</servlet-name>
+	<url-pattern>addAssignment</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>CampusShuttleMapServlet</servlet-name>
+	<url-pattern>campusShuttleMap</url-pattern>
+</servlet-mapping>
+
+</web-app>
